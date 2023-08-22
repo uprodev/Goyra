@@ -11,6 +11,11 @@ jQuery(document).ready(function ($) {
     $(this).closest('.form-default').find('.send-block').show()
   });
 
+  $(document).on('click', '.head-blog button', function (e){
+    e.preventDefault();
+    $(this).closest('.form-wrap').find('.send-block').show()
+  });
+
 
 
   if (navigator.userAgent.indexOf('Mac OS X') != -1) {
@@ -23,6 +28,15 @@ jQuery(document).ready(function ($) {
   var swiperHome = new Swiper(".home-top-slider", {
     pagination: {
       el: ".home-top-pagination",
+      clickable: true,
+    },
+  });
+
+  //slider
+  var swiperBlog = new Swiper(".blog-img-slider", {
+    spaceBetween: 10,
+    pagination: {
+      el: ".blog-img-pagination",
       clickable: true,
     },
   });
