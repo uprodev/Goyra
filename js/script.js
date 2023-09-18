@@ -3,26 +3,38 @@ jQuery(document).ready(function ($) {
   //видалити прі натяжке
   $(document).on('click', '.about .form-wrap button', function (e){
     e.preventDefault();
-    $(this).closest('.form-default').find('.send-block').show()
+    $(this).closest('.form-default').find('.send-block').show();
+
+    setTimeout(function() {
+      $('.form-default .send-block').hide();
+    }, 5000);
   });
 
   $(document).on('click', '.contact .input-submit button', function (e){
     e.preventDefault();
-    $(this).closest('.form-default').find('.send-block').show()
+    $(this).closest('.form-default').find('.send-block').show();
+    setTimeout(function() {
+      $('.form-default .send-block').hide();
+    }, 5000);
   });
 
   $(document).on('click', '.head-blog button', function (e){
     e.preventDefault();
-    $(this).closest('.form-wrap').find('.send-block').show()
+    $(this).closest('.form-wrap').find('.send-block').show();
+    setTimeout(function() {
+      $('.form-default .send-block').hide();
+    }, 5000);
+  });
+  $(document).on('click', '.add-testimonials button', function (e){
+    e.preventDefault();
+    $(this).closest('.popup-main').find('.send-block').show();
+    setTimeout(function() {
+      $('.form-default .send-block').hide();
+    }, 5000);
   });
 
 
 
-  if (navigator.userAgent.indexOf('Mac OS X') != -1) {
-    $("body").addClass("mac");
-  } else {
-    $("body").addClass("pc");
-  }
 
   //slider
   var swiperHome = new Swiper(".home-top-slider", {
@@ -31,6 +43,15 @@ jQuery(document).ready(function ($) {
       clickable: true,
     },
   });
+
+  var swiperBg = new Swiper(".bg-slider", {
+    pagination: {
+      el: ".bg-pagination",
+      clickable: true,
+    },
+  });
+
+
 
   //slider
   var swiperBlog = new Swiper(".blog-img-slider", {
@@ -182,7 +203,7 @@ jQuery(document).ready(function ($) {
 
   //marquee
   $('.marquee').marquee({
-    duration: 15000,
+    duration: 30000,
     gap:0,
     delayBeforeStart: 0,
     direction: 'left',
@@ -193,26 +214,32 @@ jQuery(document).ready(function ($) {
 
   //slider
   var swiper3d = new Swiper(".slider-3d", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    initialSlide: 4,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    //effect: "coverflow",
+    //grabCursor: true,
+    //centeredSlides: true,
+    initialSlide: 0,
     pagination: {
       el: ".pagination-3d",
       clickable: true,
     },
-    coverflowEffect: {
+    navigation: {
+      nextEl: ".next-3d",
+      prevEl: ".prev-3d",
+    },
+   /* coverflowEffect: {
       rotate: 0,
       stretch: 1150,
       depth: 0,
       modifier: 1,
       slideShadows: true,
-    },
+    },*/
     on: {
       init: function () {
         let itemTotal = $('.slider-3d .swiper-slide').length;
         $('.number-slide .total').text(itemTotal);
-        $('.number-slide .current').text("5");
+        $('.number-slide .current').text("1");
       },
     },
 
@@ -222,28 +249,28 @@ jQuery(document).ready(function ($) {
         spaceBetween: 10,
       },
       991: {
-        spaceBetween: 0,
-        slidesPerView: "auto",
-        effect: "coverflow",
-        coverflowEffect: {
+
+        //slidesPerView: "auto",
+        //effect: "coverflow",
+        /*coverflowEffect: {
           rotate: 0,
           stretch: 900,
           depth: 0,
           modifier: 1,
           slideShadows: true,
-        },
+        },*/
       },
       1280: {
-        spaceBetween: 0,
-        slidesPerView: "auto",
-        effect: "coverflow",
-        coverflowEffect: {
+
+        slidesPerView:1,
+        //effect: "coverflow",
+        /*coverflowEffect: {
           rotate: 0,
           stretch: 1150,
           depth: 0,
           modifier: 1,
           slideShadows: true,
-        },
+        },*/
       },
     }
   });
@@ -254,25 +281,15 @@ jQuery(document).ready(function ($) {
 
   //slider
   var swiperTeam = new Swiper(".team-slider", {
-    slidesPerView: "auto",
-    spaceBetween: 40,
+    slidesPerView: 1,
+    spaceBetween: 20,
     navigation: {
       nextEl: ".team-next",
       prevEl: ".team-prev",
     },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      575: {
-        slidesPerView: "auto",
-        spaceBetween: 20,
-      },
-      991: {
-        slidesPerView: "auto",
-        spaceBetween: 40,
-      },
+    pagination: {
+      el: ".team-pagination",
+      clickable: true,
     },
   });
 
@@ -282,12 +299,15 @@ jQuery(document).ready(function ($) {
     spaceBetween: 40,
     loop: true,
     speed: 700,
-    centeredSlides: true,
-    autoplay: {
+    //centeredSlides: true,
+   /* autoplay: {
       delay: 5000,
       disableOnInteraction: false,
+    },*/
+    pagination: {
+      el: ".auto-pagination",
+      clickable: true,
     },
-
     navigation: {
       nextEl: ".auto-next",
       prevEl: ".auto-prev",
@@ -385,6 +405,20 @@ jQuery(document).ready(function ($) {
    }else{
      $(this).siblings('.sub-menu').slideUp();
    }
+  });
+
+  //read more
+  $(document).on('click', '.about-block .read-more', function (e){
+    e.preventDefault();
+    $(this).hide();
+    $('.about-block .content .wrap').slideDown();
+  });
+
+  //team more
+  $(document).on('click', '.team-info .btn a', function (e){
+    e.preventDefault();
+    $(this).hide();
+    $('.team-info .item').show();
   });
 
 
