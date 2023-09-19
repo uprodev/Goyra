@@ -2245,6 +2245,9 @@
   .slider-3d-wrap .swiper-slide figure .icon-wrap{
     display: none!important;
   }
+  .fix-block{
+    z-index: 99999;
+  }
 }
 
 @media (max-width: 375px){

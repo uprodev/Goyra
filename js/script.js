@@ -3,33 +3,33 @@ jQuery(document).ready(function ($) {
   //видалити прі натяжке
   $(document).on('click', '.about .form-wrap button', function (e){
     e.preventDefault();
-    $(this).closest('.form-default').find('.send-block').show();
+    $(this).closest('.form-default').find('.send-block').slideDown();
 
     setTimeout(function() {
-      $('.form-default .send-block').hide();
+      $('.form-default .send-block').slideUp();
     }, 5000);
   });
 
   $(document).on('click', '.contact .input-submit button', function (e){
     e.preventDefault();
-    $(this).closest('.form-default').find('.send-block').show();
+    $(this).closest('.form-default').find('.send-block').slideDown();
     setTimeout(function() {
-      $('.form-default .send-block').hide();
+      $('.form-default .send-block').slideUp();
     }, 5000);
   });
 
   $(document).on('click', '.head-blog button', function (e){
     e.preventDefault();
-    $(this).closest('.form-wrap').find('.send-block').show();
+    $(this).closest('.form-wrap').find('.send-block').slideDown();
     setTimeout(function() {
-      $('.form-default .send-block').hide();
+      $('.form-default .send-block').slideUp();
     }, 5000);
   });
   $(document).on('click', '.add-testimonials button', function (e){
     e.preventDefault();
-    $(this).closest('.popup-main').find('.send-block').show();
+    $(this).closest('.popup-main').find('.send-block').slideDown();
     setTimeout(function() {
-      $('.form-default .send-block').hide();
+      $('.form-default .send-block').slideUp();
     }, 5000);
   });
 

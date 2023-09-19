@@ -2183,7 +2183,10 @@
     top: 210px; }
 
   .slider-3d-wrap .swiper-slide figure .icon-wrap {
-    display: none !important; } }
+    display: none !important; }
+
+  .fix-block {
+    z-index: 99999; } }
 @media (max-width: 375px) {
   .about .form-wrap {
     -webkit-transform: translate(-87%, 0);

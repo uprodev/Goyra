@@ -554,7 +554,7 @@ header {
   position: relative; }
   .form-default .send-block {
     position: absolute;
-    top: -115px;
+    top: -70px;
     left: -10px;
     right: -10px;
     bottom: 0;
@@ -3098,5 +3098,4 @@ footer .soc a:hover img {
   border-bottom: 4px solid #fff; }
 
 /*------------------------END-PAGE-ABOUT------------------------*/
-
 /*# sourceMappingURL=styles.css.map */
