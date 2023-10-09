@@ -422,5 +422,58 @@ jQuery(document).ready(function ($) {
   });
 
 
+  //adventures more
+  $(document).on('click', '.show-more-item', function (e){
+    e.preventDefault();
+    $(this).toggleClass('is-active');
+    if($(this).hasClass('is-active')){
+      $(this).closest('.btn-wrap').addClass('is-active');
+      $(this).closest('.item').find('.detail-info').slideDown();
+    }else{
+      $(this).closest('.btn-wrap').removeClass('is-active');
+      $(this).closest('.item').find('.detail-info').slideUp();
+    }
+
+
+
+  });
+
+  //adventures close
+  $(document).on('click', '.close-item', function (e){
+    e.preventDefault();
+    $(this).closest('.btn-wrap').removeClass('is-active');
+    $(this).closest('.item').find('.detail-info').slideUp();
+  });
+
+
+  $(document).on('click', ' .click-info', function (e){
+    e.preventDefault();
+    let item = $(this).closest('.item');
+
+   if(item.hasClass('is-active')){
+     item.removeClass('is-active');
+     setTimeout(function() {
+       item.removeClass('is-index');
+     }, 300);
+   }else{
+     $('.adventures .item.is-active').removeClass('is-active is-index');
+     item.addClass('is-active is-index');
+   }
+  });
+
+  //HOVER UNHOVER
+
+  if(window.innerWidth > 999991){
+    $(".adventures .item").hover(function() {
+      $('.adventures .item').removeClass("is-hover");
+      $(this).addClass("is-hover");
+    }, function() {
+      setTimeout(function() {
+        $('.adventures .item').removeClass("is-hover");
+      }, 300);
+    });
+  }
+
+
 
 });

@@ -207,7 +207,7 @@ header {
       margin-top: 8px; }
 
 .is-sticky .top-line {
-  padding-top: 5px; }
+  padding-top: 5px !important; }
   .is-sticky .top-line .content-width {
     padding: 24px 0 24px; }
 .is-sticky .top-line .content-width:after {
@@ -2208,7 +2208,8 @@ footer .soc a:hover img {
 .page-default header .top-line {
   padding-top: 45px; }
 .page-default header .top-line .content-width:after {
-  bottom: -5px; }
+  bottom: -4px;
+  top: 4px; }
 .page-default footer {
   border-radius: 10px 10px 0 0; }
 
@@ -2499,7 +2500,7 @@ footer .soc a:hover img {
     position: relative; }
     .blog .form-wrap label {
       display: none; }
-    .blog .form-wrap input {
+    .blog .form-wrap span input {
       width: 100%;
       outline: none;
       border-radius: 90px;
@@ -3098,4 +3099,428 @@ footer .soc a:hover img {
   border-bottom: 4px solid #fff; }
 
 /*------------------------END-PAGE-ABOUT------------------------*/
+/*------------------------PAGE-ADVENTURES------------------------*/
+.adventures {
+  position: relative;
+  z-index: 10;
+  margin-top: -175px;
+  padding: 174px 0 77px; }
+  .adventures .bg {
+    top: 50px; }
+  .adventures .title-desktop {
+    margin: -50px 0 90px; }
+    .adventures .title-desktop .h2 {
+      text-align: center;
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 106%; }
+  .adventures .content-width {
+    z-index: 10;
+    position: relative; }
+  .adventures .bg-mob {
+    display: none; }
+    .adventures .bg-mob .img-1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1; }
+    .adventures .bg-mob .img-2 {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 100%;
+      z-index: 2; }
+    .adventures .bg-mob .img-3 {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      z-index: 3; }
+  .adventures .bg .img-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; }
+  .adventures .bg .img-2 {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    z-index: 2; }
+  .adventures .bg .img-3 {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    z-index: 3; }
+  .adventures .breadcrumb {
+    margin-bottom: 110px; }
+  .adventures .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .adventures .item {
+    width: 25%;
+    position: relative;
+    -webkit-transition: all 0.01s ease;
+    transition: all 0.01s ease;
+    padding: 0 35px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+    .adventures .item p.number {
+      position: absolute;
+      top: -28px;
+      left: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border-radius: 100%;
+      background: #FF7900;
+      color: #fff;
+      width: 58px;
+      height: 58px;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; }
+    .adventures .item figure {
+      width: 172px;
+      height: 172px;
+      border-radius: 100%;
+      overflow: hidden;
+      border: 3px solid #FF7900;
+      margin-bottom: 20px; }
+      .adventures .item figure img {
+        position: relative;
+        top: -3px;
+        left: -3px;
+        width: calc(100% + 6px);
+        height: calc(100% + 6px);
+        max-width: calc(100% + 6px);
+        max-height: calc(100% + 6px);
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center;
+           object-position: center; }
+    .adventures .item .h6 {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      text-align: center;
+      margin: 0;
+      color: #000;
+      width: 215px;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); }
+    .adventures .item .info {
+      position: absolute;
+      bottom: calc(100% + 35px);
+      left: 50%;
+      -webkit-transform: translate(-50%, 0) scale(0);
+              transform: translate(-50%, 0) scale(0);
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      background: #F9E5D7;
+      border-radius: 10px;
+      padding: 15px;
+      width: 390px;
+      height: auto;
+      border: 3px solid #FF7900; }
+      .adventures .item .info p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        color: #000; }
+      .adventures .item .info:after {
+        position: absolute;
+        bottom: -11px;
+        left: 50%;
+        margin-left: -11px;
+        content: '';
+        width: 15px;
+        height: 15px;
+        border-radius: 4px;
+        border: 3px solid #FF7900;
+        z-index: 10;
+        background: #F9E5D7;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        border-top-color: transparent !important;
+        border-left-color: transparent !important; }
+  .adventures .item-1 {
+    top: 268px;
+    width: 253px; }
+    .adventures .item-1 figure {
+      width: 188px;
+      height: 188px; }
+  .adventures .item-2 {
+    width: 300px;
+    left: -45px; }
+    .adventures .item-2 p.number {
+      left: 10px;
+      background: #2B3D24; }
+    .adventures .item-2 figure {
+      border-color: #2B3D24;
+      width: 230px;
+      height: 230px; }
+    .adventures .item-2 .info {
+      border-color: #2B3D24; }
+      .adventures .item-2 .info:after {
+        border-color: #2B3D24; }
+  .adventures .item-3 {
+    top: 25px;
+    width: 253px; }
+    .adventures .item-3 p.number {
+      background: #FFAD00; }
+    .adventures .item-3 figure {
+      border-color: #FFAD00; }
+    .adventures .item-3 .h6 {
+      width: 260px; }
+    .adventures .item-3 .info {
+      border-color: #FFAD00; }
+      .adventures .item-3 .info:after {
+        border-color: #FFAD00; }
+  .adventures .item-4 {
+    top: 52px;
+    left: 60px;
+    width: 330px; }
+    .adventures .item-4 p.number {
+      top: -18px;
+      left: 10px;
+      background: #505A14; }
+    .adventures .item-4 figure {
+      width: 258px;
+      height: 258px;
+      border-color: #505A14; }
+    .adventures .item-4 .h6 {
+      width: 260px; }
+    .adventures .item-4 .info {
+      border-color: #505A14; }
+      .adventures .item-4 .info:after {
+        border-color: #505A14; }
+  .adventures .item-5 {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+    left: 123px; }
+    .adventures .item-5 p.number {
+      background: #FFAD00; }
+    .adventures .item-5 figure {
+      border-color: #FFAD00; }
+    .adventures .item-5 .info {
+      border-color: #FFAD00; }
+      .adventures .item-5 .info:after {
+        border-color: #FFAD00; }
+  .adventures .item-6 {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+    width: 295px;
+    left: 95px;
+    top: 20px; }
+    .adventures .item-6 figure {
+      width: 220px;
+      height: 220px; }
+  .adventures .item-7 {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+    top: 38px;
+    left: 75px;
+    margin-left: 200px;
+    width: 327px; }
+    .adventures .item-7 p.number {
+      background: #505A14;
+      top: -18px;
+      left: 10px; }
+    .adventures .item-7 figure {
+      width: 252px;
+      height: 252px;
+      border-color: #505A14; }
+    .adventures .item-7 .info {
+      border-color: #505A14; }
+      .adventures .item-7 .info:after {
+        border-color: #505A14; }
+  .adventures .title {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    margin: 13px 0 68px; }
+    .adventures .title .h5 {
+      display: none; }
+  .adventures h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 106%;
+    color: #FF7900; }
+
+.adventures .item.is-active {
+  z-index: 10; }
+  .adventures .item.is-active .h6 .click-info img {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .adventures .item.is-active .info {
+    -webkit-transform: translate(-50%, 0) scale(1) !important;
+            transform: translate(-50%, 0) scale(1) !important; }
+
+.adventures .item.is-index {
+  z-index: 10; }
+
+.event-no-tab {
+  padding-top: 15px !important;
+  padding-bottom: 115px !important; }
+  .event-no-tab .content-width {
+    border-top: 1px solid #FFF0E8;
+    padding-top: 60px; }
+  .event-no-tab .tab-item .item .text .h2 {
+    text-align: left;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 106%; }
+  .event-no-tab .tab-item .item .text {
+    width: 48%; }
+  .event-no-tab .tab-item .item .text p {
+    font-size: 18px; }
+  .event-no-tab .btn-wrap .link {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    color: #FF7900;
+    position: relative;
+    top: 10px; }
+    .event-no-tab .btn-wrap .link img {
+      margin-right: 10px;
+      position: relative;
+      top: -1px;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease; }
+    .event-no-tab .btn-wrap .link:hover {
+      color: #000; }
+      .event-no-tab .btn-wrap .link:hover img {
+        -webkit-filter: invert(60%) sepia(56%) saturate(563%) hue-rotate(359deg) brightness(1%) contrast(106%);
+                filter: invert(60%) sepia(56%) saturate(563%) hue-rotate(359deg) brightness(1%) contrast(106%); }
+  .event-no-tab .is-active .link img {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  .event-no-tab .detail-info {
+    display: none; }
+    .event-no-tab .detail-info .detail-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin-bottom: 42px; }
+      .event-no-tab .detail-info .detail-item figure {
+        width: 340px;
+        border-radius: 10px; }
+        .event-no-tab .detail-info .detail-item figure img {
+          width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+             object-fit: cover;
+          border-radius: 20px; }
+      .event-no-tab .detail-info .detail-item .text {
+        width: calc(100% - 370px) !important; }
+    .event-no-tab .detail-info .detail-item:first-child {
+      margin-top: 50px; }
+  .event-no-tab .tab-item .item + .item {
+    margin-top: 38px !important; }
+  .event-no-tab .item:nth-child(2n) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+  .event-no-tab .tab-item .item {
+    background: #FFF0E8; }
+
+.click-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  color: #FF7900;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .click-info img {
+    margin-right: 5px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    position: relative;
+    top: -1px;
+    width: 14px; }
+
+.event-no-tab .tab-item .item figure {
+  border-radius: 20px; }
+
+.adventures .item.is-hover {
+  z-index: 10; }
+
+.is-sticky .top-line .content-width {
+  min-height: 99px; }
+
+.page-default .is-sticky .top-line {
+  padding-top: 1px !important; }
+
+.page-default header .top-menu > ul {
+  position: relative;
+  top: 4px; }
+
+/*-----------------------END-PAGE-ADVENTURES------------------------*/
+@media (min-width: 992px) {
+  .adventures .item-2 .info, .adventures .item-3 .info, .adventures .item-4 .info {
+    top: calc(100% + 35px);
+    bottom: inherit; }
+    .adventures .item-2 .info:after, .adventures .item-3 .info:after, .adventures .item-4 .info:after {
+      top: -11px;
+      -webkit-transform: rotate(225deg);
+              transform: rotate(225deg); } }
+
 /*# sourceMappingURL=styles.css.map */
