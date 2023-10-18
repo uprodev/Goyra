@@ -292,9 +292,13 @@
 						<p>Хочете ближче познайомитися із форматом GoЙra!? Спробуйте пригоду на день. Такі події відбуваються протягом усього року, передбачають різні формати і підходять для дітей будь-якого віку.
 						</p>
 						<p>Пригода починається та закінчується в Івано-Франківську і триває від кількох годин до цілого світлового дня. </p>
-						<div class="btn-wrap">
-							<a href="#" class="link show-more-item"><img src="img/icon-24.svg" alt="">Докладніше</a>
+						<div class="btn-wrap btn-desc">
+							<a href="#" class="link show-more-item"><img src="img/icon-24.svg" alt=""><span>Показати</span> <span>Сховати</span> всі категорії</a>
 						</div>
+					</div>
+
+					<div class="btn-wrap btn-mob">
+						<a href="#" class="link show-more-item"><img src="img/icon-24.svg" alt=""><span>Показати</span> <span>Сховати</span> всі категорії</a>
 					</div>
 					<div class="detail-info">
 						<div class="detail-item">
@@ -360,7 +364,7 @@
 								<p>Це одноденний похід або вільна прогулянка для класу. Формат і маршрут узгоджується додатково і враховує вік та фізичну підготовку дітей.
 								</p>
 								<div class="btn-wrap">
-									<a href="#" class="btn-default btn-big ">Замовити</a>
+									<a href="#order" class="btn-default btn-big fancybox">Замовити</a>
 								</div>
 							</div>
 						</div>
@@ -445,38 +449,26 @@
 		</div>
 	</div>
 
-	<div id="add-testimonials" class="add-testimonials popup-default" style="display:none;">
+	<div id="order" class="add-testimonials popup-default" style="display:none;">
 		<a href="#" class="close-popup" data-fancybox-close> <img src="img/close.svg" alt=""></a>
 		<div class="popup-main">
-			<p class="h3">Лишіть відгук про досвід Вашої дитини</p>
+			<p class="h3">Замовлення пригоди для класу</p>
 			<p>Заповніть форму нижче</p>
 			<form action="#" class="form-default form-default-big">
 				<div class="input-wrap">
 					<label for="name-popup"></label>
 					<input type="text" name="name-popup" id="name-popup" placeholder="Ім’я">
 				</div>
-				<div class="select-block">
-					<label class="form-label" for="select-1"></label>
-					<select id="select-1" name="select-1">
-						<option value="0" disabled selected>Оберіть Вашу стать</option>
-						<option value="1">M</option>
-						<option value="2">Ж</option>
-					</select>
-				</div>
-				<div class="select-block">
-					<label class="form-label" for="select-2"></label>
-					<select id="select-2" name="select-2">
-						<option value="0" disabled selected>Оберіть пригоду</option>
-						<option value="1">пригода 1</option>
-						<option value="2">пригода 2</option>
-					</select>
+				<div class="input-wrap input-wrap-tel-about">
+					<label for="tel-about"></label>
+					<input type="text" name="tel-about" id="tel-about" placeholder="">
 				</div>
 				<div class="input-wrap">
 					<label for="message-popup"></label>
-					<textarea name="message-popup" id="message-popup" placeholder="Опишіть досвід дитини"></textarea>
+					<textarea name="message-popup" id="message-popup" placeholder="Розкажіть про свій клас: вік та кількість дітей. Які дати вам підходять та куди хочете помандрувати?"></textarea>
 				</div>
 				<div class="input-wrap-check">
-					<input type="checkbox" id="check-popup-1" name="check-popup-1">
+					<input type="checkbox" id="check-popup-1" name="check-popup-1" checked>
 					<label for="check-popup-1">Натискаючи кнопку “Надіслати” я даю згоду на обробку моїх персональних даних</label>
 				</div>
 				<div class="input-submit">

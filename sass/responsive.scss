@@ -395,7 +395,21 @@ $green: #2B3D24;
   .adventures .item-4{
     left: 0;
   }
-
+  .donate .info-block{
+    left: 0;
+  }
+  .donate .item .text p span{
+    white-space: normal;
+  }
+  .donate .content figure{
+    padding-top: 110px;
+  }
+  .oon ul li{
+    padding: 25px 30px;
+  }
+  .add-social .list-tel li a{
+    font-size: 22px;
+  }
 }
 
 @media (max-width:991px) {
@@ -1249,6 +1263,60 @@ $green: #2B3D24;
     order: 2;
     margin: 30px 0 0;
   }
+  .title-img h1{
+    font-size: 48px;
+  }
+  .title-img .content{
+    width: 100%;
+  }
+  .donate .content figure{
+    width: 100%;
+    padding: 140px 100px 0;
+    order: 1;
+  }
+  .donate .left{
+    width: 100%;
+    order: 2;
+    margin: 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .item{
+      width: 48%;
+    }
+  }
+  .donate .right{
+    width: 100%;
+    order: 3;
+  }
+  .donate .content{
+    position: relative;
+  }
+  .donate .item .line-dot{
+    display: none;
+  }
+  .donate .info-block{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+  }
+  .donate .info-block:before{
+    transform: rotate(315deg);
+    top: 100%;
+    left: 50%;
+    margin-top: -4px;
+  }
+  .our-partners ul{
+    grid-gap: 20px;
+  }
+  .add-social .content-width{
+    width: 100%;
+  }
+  .donate .item-3{
+    margin: 0;
+  }
 }
 
 @media (max-width:767px) {
@@ -1350,6 +1418,26 @@ $green: #2B3D24;
   }
   .adventures .item{
     width: 49%;
+  }
+  .donate .top{
+    width: 100%;
+  }
+  .oon ul li .text{
+    width: 100%;
+    margin-top: 30px;
+  }
+  .add-social .content {
+    padding: 30px;
+  }
+  .add-social .info-block{
+    width: 100%;
+    padding: 0;
+  }
+  .add-social .text{
+    width: 100%;
+  }
+  .add-social .h3{
+    margin-bottom: 15px;
   }
 }
 
@@ -1832,9 +1920,7 @@ $green: #2B3D24;
   .page-default footer .left .logo-wrap{
     margin-bottom: 38px;
   }
-  .page-default footer .left .list-info{
-    display: none;
-  }
+
   .page-default footer .left .soc {
     margin-bottom: 23px;
   }
@@ -2527,10 +2613,302 @@ $green: #2B3D24;
   .event-no-tab .tab-item .item + .item {
     margin-top: 62px !important;
   }
+  .event .btn-wrap.btn-desc{
+    display: none;
+  }
+  .event .btn-wrap.btn-mob{
+    display: block;
+    margin-bottom: -10px;
+  }
+  .event-no-tab .btn-wrap .link:hover{
+    color: #FF7900;
+    img{
+      filter: none!important;
+    }
+  }
+  .title-img .lang{
+    right: 10px;
+    top: 20px;
+  }
+  .title-img .lang li + li {
+    margin-left: 20px;
+  }
+  header .top-line .content-width{
+    padding-bottom: 0!important;
+  }
+  .sticky-wrapper{
+    max-height: 100px;
+  }
+  .adventures{
+    margin-top: -145px;
+  }
+  .title-img{
+    margin-top: -100px;
+    padding-bottom: 22px;
+    .bg{
+      display: none;
+    }
+    .bg-mob{
+      display: block;
+      .img-1{
+        position: absolute;
+        top: 35px;
+        left: 0;
+        width: 100%;
+      }
+      .img-2{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+      }
+      .img-3{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+  .title-img h1{
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 105%;
+    margin-top: 100px;
+    margin-bottom: 13px;
+  }
+
+  .title-img .content figure img{
+    min-height: 200px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .blog .h2, .donate .h2, .oon .h2, .our-partners .h2{
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 112%;
+  }
+  .blog .h2{
+    margin-bottom: 20px;
+  }
+  .blog .list-info li{
+    font-size: 14px;
+    min-height: 36px;
+    padding: 0 14px;
+  }
+  .blog .list-info{
+    margin-bottom: 18px;
+  }
+  .blog-social{ .content {
+      grid-gap: 25px 40px;
+    }
+  }
+  .blog-social .bottom {
+    margin-top: 30px;
+  }
+  .blog-social{
+    padding-bottom: 20px;
+  }
+  .donate {
+    padding: 47px 0 50px;
+  }
+  .donate .top p.info{
+    height: auto;
+    min-height: 44px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    line-height: 1.5;
+    border-radius: 100px;
+    font-size: 14px;
+  }
+  .donate .content{
+    margin-top: 35px;
+  }
+  .donate .info-block{
+    width: 300px;
+    margin-left: -150px;
+    padding: 10px 9px;
+  }
+  .donate .content figure{
+    padding: 140px 0 0;
+  }
+  .donate .left .item{
+    width: 100%;
+    margin-bottom: 22px;
+  }
+  .donate .item .text p{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .donate .left{
+    margin: 37px 0 0;
+  }
+  .donate .item .text a{
+    font-size: 14px;
+  }
+  .donate .btn-wrap a{
+    font-size: 14px;
+  }
+  .oon ul li {
+    padding: 15px 13px;
+    margin-bottom: 20px;
+  }
+  .oon ul li figure{
+    width: 125px;
+  }
+  .oon ul li .h3{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 138.3%
+  }
+  .oon ul li .text{
+    margin-top: 19px;
+  }
+  .oon ul li p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .our-partners {
+    padding: 28px 0 25px;
+  }
+  .our-partners ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .our-partners ul li{
+    height: 70px;
+  }
+  .our-partners ul {
+    grid-gap: 25px 25px;
+  }
+  .add-social {
+    padding: 37px 0 120px;
+  }
+  .add-social .list-tel li a{
+    font-size: 14px;
+    img{
+      max-width: 19px;
+      margin-right: 5px;
+    }
+  }
+  .add-social .list-tel li:nth-child(2) a{
+    img{
+      max-width: 16px;
+    }
+  }
+  .add-social .list-tel li {
+    margin-bottom: 9px;
+  }
+
+  .add-social .info-block p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .add-social .text{
+    margin-bottom: 2px;
+  }
+  .add-social .content {
+    padding: 75px 20px 55px;
+  }
 }
+
 
 @media (max-width: 375px){
   .about .form-wrap {
     transform: translate(-87%, 0);
   }
+  .content-width {
+    padding: 0 10px;
+  }
+  .adventures {
+    padding: 115px 0 0;
+  }
+  .breadcrumb{
+    padding-right: 100px;
+  }
+  .adventures .breadcrumb {
+    margin-bottom: 40px;
+  }
+  .adventures .item figure{
+    width: 105px;
+    height: 105px;
+  }
+  .adventures .item .h6 {
+    padding-left: 16px;
+    padding-top: 24px;
+  }
+  .adventures .item p.number {
+    left: 137px;
+    top: -20px;
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+  }
+  .adventures .item {
+    margin-bottom: 50px !important;
+  }
+  .event-no-tab .tab-item .item .text .h2{
+    font-size: 26px;
+    margin-bottom: 23px;
+  }
+  .event .tab-item .item .text ul li{
+    padding: 0 14px;
+  }
+  .event-no-tab .tab-item .item .text p{
+    font-size: 14px;
+  }
+  .event-no-tab .tab-item .item figure {
+    max-height: 220px;
+  }
+  .event-no-tab .tab-item .item + .item {
+    margin-top: 57px !important;
+  }
+  .event-no-tab .btn-wrap .link{
+    font-size: 14px;
+  }
+  .event-no-tab .btn-wrap .link img{
+    margin-right: 0;
+  }
+  .event-no-tab {
+    padding-bottom: 55px !important;
+  }
+  .page-default footer {
+    padding-top: 44px;
+  }
+  footer .left .logo-wrap {
+    width: 110px;
+  }
+  .page-default footer .left .logo-wrap {
+    margin-bottom: 25px;
+  }
+  footer .left .soc img {
+    transform: scale(0.95);
+  }
+  footer .soc li + li {
+    margin-left: 14px;
+  }
+  footer .left .list-info li a, footer .footer-menu ul li a{
+    font-size: 14px;
+  }
+  .page-default footer .left .soc {
+    margin-bottom: 15px;
+  }
+  footer .left .list-info li + li {
+    margin-top: 15px;
+  }
+  footer .left .list-info {
+    margin-bottom: 5px;
+  }
+  .page-default footer .footer-menu ul li + li {
+    margin-top: 16px;
+  }
+
+
 }
