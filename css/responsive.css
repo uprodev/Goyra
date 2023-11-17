@@ -236,6 +236,18 @@
   .page-default header .top-menu {
     left: 0; }
 
+  .events-block .select-wrap ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+
+  .events-block .select-wrap .wrap {
+    padding-left: calc((100vw - 1160px)/2);
+    margin-left: calc((-100vw + 1160px)/2);
+    padding-right: 50px;
+    width: 100vw;
+    min-width: 100vw; }
+
   .events-block .select-wrap .wrap {
     padding-left: calc((100vw - 960px)/2);
     margin-left: calc((-100vw + 960px)/2); }

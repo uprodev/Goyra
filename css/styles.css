@@ -4154,13 +4154,6 @@ header .top-menu > ul > li + li {
     .form-default .input-wrap-check-more .wrap input:checked + label:before {
       border: 2px solid #FF7900; }
 
-.events-block .select-wrap .wrap {
-  padding-left: calc((100vw - 1160px)/2);
-  margin-left: calc((-100vw + 1160px)/2);
-  padding-right: 50px;
-  width: 100vw;
-  min-width: 100vw; }
-
 /*-----------------------END-PAGE-EVENTS------------------------*/
 
 /*# sourceMappingURL=styles.css.map */
