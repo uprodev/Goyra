@@ -476,4 +476,26 @@ jQuery(document).ready(function ($) {
 
 
 
+  //copy in buffer
+  $(document).on('click', '.share', function (e){
+    e.preventDefault();
+    let copyText = $(this).attr('href');
+    document.addEventListener('copy', function(e) {
+      e.clipboardData.setData('text/plain', copyText);
+      e.preventDefault();
+    }, true);
+
+    document.execCommand('copy');
+    console.log('copied text : ', copyText);
+
+    $(".popup-blog").prepend("<p class='info-show'>Посилання в буфері обміну</p>");
+    setTimeout(function() {
+      $('.info-show').remove()
+    }, 1000);
+
+  });
+
+
+
+
 });
