@@ -495,6 +495,21 @@ jQuery(document).ready(function ($) {
 
   });
 
+  $(document).on('click', '.item-3x2 .link-wrap', function (e){
+    e.preventDefault();
+    $('.item-3x2 .item').slideDown();
+    $(this).hide()
+  });
+
+
+  $(document).on('click', '.links-block .link-wrap a', function (e){
+    e.preventDefault();
+    $('.links-block .item').slideDown();
+    $(this).hide()
+  });
+
+
+
 
 
 
