@@ -5649,4 +5649,24 @@ body .auto-slider-mini{
     }
   }
 }
+
+.read-more{
+  display: flex;
+  align-items: center;
+  img{
+    margin-right: 5px;
+    transition: none;
+    position: relative;
+    top: -2px;
+  }
+  &:hover{
+    color: #000;
+    img{
+       filter: invert(60%) sepia(56%) saturate(563%) hue-rotate(359deg) brightness(119%) contrast(106%);
+    }
+  }
+}
+.item-3x2 .item a .text p{
+  min-height: 59px;
+}
 /*-----------------------END-PAGE-TEACHING------------------------*/

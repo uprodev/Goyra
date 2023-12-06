@@ -3468,7 +3468,10 @@
     width: 100%; }
 
   .popup-scientific .scientific-content ul li p {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  .item-3x2 .item a .text p {
+    min-height: inherit; } }
 @media (max-width: 375px) {
   .about .form-wrap {
     -webkit-transform: translate(-87%, 0);
@@ -3559,4 +3562,5 @@
 
   .page-default footer .footer-menu ul li + li {
     margin-top: 16px; } }
+
 /*# sourceMappingURL=responsive.css.map */
