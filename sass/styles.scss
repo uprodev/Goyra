@@ -5772,4 +5772,11 @@ body .auto-slider-mini{
     padding: 103px 53px 85px;
   }
 }
+
+.accordion-slider .accordion-thumb p:hover{
+  color: #FF7900;
+  &:before{
+    color: #FF7900;
+  }
+}
 /*-----------------------END-PAGE-FESTIVAL------------------------*/
