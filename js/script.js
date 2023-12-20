@@ -495,22 +495,40 @@ jQuery(document).ready(function ($) {
 
   });
 
-  $(document).on('click', '.item-3x2 .link-wrap', function (e){
+  $(document).on('click', '.item-3x2 .link-wrap a', function (e){
     e.preventDefault();
     $('.item-3x2 .item').slideDown();
     $(this).hide()
   });
 
-
   $(document).on('click', '.links-block .link-wrap a', function (e){
     e.preventDefault();
-    $('.links-block .item').slideDown();
-    $(this).hide()
+    let colItems = $('.links-block .item:visible').length,
+        itemShow1 = colItems + 1,
+        itemShow2 = colItems + 2,
+        itemShow3 = colItems + 3,
+        lastItem = $(".links-block .item").length;
+
+    console.log(colItems)
+
+
+    $(".links-block .item:nth-child(" + itemShow1 + ")").slideDown();
+    $(".links-block .item:nth-child(" + itemShow2 + ")").slideDown();
+    $(".links-block .item:nth-child(" + itemShow3 + ")").slideDown();
+
+    if(lastItem - 3 <= colItems){
+      $(this).hide();
+    }
+
   });
 
 
 
-
-
+ // show text - festival page
+  $(document).on('click', '.read-more-festival', function (e){
+    e.preventDefault();
+    $('.hide-block-festival').slideDown();
+    $(this).hide()
+  });
 
 });
