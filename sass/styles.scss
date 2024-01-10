@@ -5780,3 +5780,214 @@ body .auto-slider-mini{
   }
 }
 /*-----------------------END-PAGE-FESTIVAL------------------------*/
+/*------------------------PAGE-MERCH------------------------*/
+.merch{
+  padding-bottom: 105px;
+  .breadcrumb{
+    margin-bottom: 57px;
+  }
+  h1{
+    margin-bottom: 29px;
+  }
+  .head-merch{
+    max-width: 960px;
+    margin: 0 auto 40px;
+    p{
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 25px;
+      a{
+        color: #FF7900;
+        text-decoration-line: underline;
+        font-weight: 600;
+        &:hover{
+          color: $orangeHover;
+        }
+      }
+    }
+    p:last-child{
+      margin-bottom: 0;
+    }
+  }
+  .item .text-wrap p{
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 112%;
+    margin-bottom: 20px;
+  }
+  .item .text-wrap p:last-child{
+    margin-bottom: 14px;
+  }
+  .item figure .label p{
+    margin: 0!important;
+  }
+}
+/*-----------------------END-PAGE-MERCH------------------------*/
+/*------------------------PAGE-RENTAL------------------------*/
+.rental{
+  .rental-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px 40px;
+    margin-bottom: 60px;
+    .item-img{
+      overflow: hidden;
+      border-radius: 10px;
+      a{
+        display: block;
+        height: 230px;
+        position: relative;
+        img{
+          width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+          object-fit: cover;
+          -o-object-position: center;
+          object-position: center;
+          -webkit-transition: all .4s ease;
+          transition: all .4s ease;
+        }
+        &:hover{
+          img{
+            transform: scale(1.03);
+          }
+        }
+      }
+    }
+  }
+  .title{
+    margin: 30px 0 45px;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 106%;
+  }
+  .title-info{
+    margin: 0 0 25px;
+  }
+  .rental-table-wrap{
+    margin-bottom: 40px;
+  }
+  .btn-wrap{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  .text-info{
+    ul{
+      padding: 0 18px;
+      li{
+        padding-left: 10px;
+        position: relative;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        &:before{
+          position: absolute;
+          top: -8px;
+          left: -7px;
+          content: '.';
+          color: #000;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .rental-img-2{
+    margin-bottom: 120px;
+  }
+}
+
+.table-col-2{
+  margin: auto;
+  border-radius: 10px;
+  border: 1px solid #000;
+  width: 840px;
+  max-width: 100%;
+  .table-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #000;
+  }
+  .table-head{
+    border-top: none;
+  }
+  .data{
+    width: 50%;
+    padding: 11px 20px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+  }
+  .data-1{
+    border-right: 1px solid #000;
+  }
+  .table-head .data{
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 112%;
+    text-align: center;
+    padding: 22px 25px 15px;
+    justify-content: center;
+  }
+}
+
+.form-default{
+  .input-wrap-date{
+    position: relative;
+    input{
+      width: 300px;
+      padding-right: 70px;
+    }
+    img{
+      position: absolute;
+      left: 270px;
+      top: 5px;
+    }
+  }
+}
+
+.popup-default{
+  .text-info-popup{
+    margin: 25px auto 0;
+    width: 235px;
+
+    p{
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      margin-bottom: 8px;
+      text-align: center;
+      a{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        color: $orange;
+        &:hover{
+          color: $orangeHover;
+        }
+      }
+    }
+    p:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.air-datepicker-global-container{
+  z-index: 999999;
+}
+.order-popup .h3{
+  padding: 0!important;
+}
+/*-----------------------END-PAGE-RENTAL------------------------*/
