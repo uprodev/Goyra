@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Goyra</title>
+
+	
+	<!-- Main style -->
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link rel="stylesheet" href="css/font.css"/>
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/nice-select.css"/>
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/intlTelInput.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/aos.css"/>
+	<link rel="stylesheet" type="text/css" href="css/air-datepicker.css"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+	
+</head>
+<body>
+
+
+	<div class="menu-responsive" id="menu-responsive" style="display: none">
+		<div class="top">
+			<div class="close-menu">
+				<a href="#"><img src="img/close-menu.png" alt=""></a>
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="logo-wrap">
+				<a href="index.html">
+					<img src="img/logo-footer.svg" alt="">
+				</a>
+			</div>
+			<nav class="mob-menu">
+				<ul class="">
+					<li class="sub-menu-wrap">
+						<a href="#">Пригоди на природі</a>
+						<ul class="sub-menu">
+							<li><a href="#">Навчання просто неба</a></li>
+							<li><a href="#">Блог</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Навчання просто неба</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Про нас</a></li>
+					<li><a href="#">Громадьська діяльність</a></li>
+					<li class="sub-menu-wrap">
+						<a href="#">Інше</a>
+						<ul class="sub-menu">
+							<li><a href="#">Навчання просто неба</a></li>
+							<li><a href="#">Блог</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<ul class="list-info">
+				<li><a href="mailto:goyra.outdoorcamp@gmail.com">goyra.outdoorcamp@gmail.com</a></li>
+				<li><a href="tel:+380689795757">+38 (068) 979 57 57</a></li>
+			</ul>
+			<ul class="soc">
+				<li><a href="#"><img src="img/icon-13-1.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/icon-13-2.svg" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<main>
+		<div style="margin: 30px 0;">
+			<a href="#adventure" class="btn-default fancybox">Реєстрація на пригоду</a>
+		</div>
+		<div style="margin: 30px 0;">
+			<a href="#festival" class="btn-default fancybox">Реєстрація команди фестивалю GoЙra!</a>
+		</div>
+
+
+
+
+		<div id="adventure" class="popup-full send-show-block" style="display: none">
+
+			<div class="popup-main content-width">
+				<div class="title-wrap">
+					<p class="h3">Реєстрація на пригоду</p>
+					<a href="#" class="close-popup" data-fancybox-close> <img src="img/close.svg" alt=""></a>
+				</div>
+				<form action="#" class="form-default form-default-big">
+					<div class="left">
+						<h3 class="title">Особисті дані:</h3>
+						<div class="input-wrap">
+							<label for="adventure-email"></label>
+							<input type="email" name="adventure-email" id="adventure-email" placeholder="Email*" required>
+						</div>
+						<div class="input-wrap">
+							<label for="adventure-name"></label>
+							<input type="text" name="adventure-name" id="adventure-name" placeholder="Ім’я Прізвище*" required>
+						</div>
+						<div class="input-wrap input-wrap-tel-about">
+							<label for="tel-about"></label>
+							<input type="text" name="tel-about" id="tel-about" placeholder="">
+						</div>
+						<div class="input-wrap">
+							<label for="adventure-message"></label>
+							<textarea name="adventure-message" id="adventure-message" placeholder="Звідки Ви дізналися про наш табір?" class="text1"></textarea>
+						</div>
+						<div class="space"></div>
+						<h3 class="title">Інформація про дитину:</h3>
+						<div class="input-wrap">
+							<label for="adventure-name-2"></label>
+							<input type="text" name="adventure-name-2" id="adventure-name-2" placeholder="Прізвище, ім'я та по-батькові дитини*" required>
+						</div>
+						<div class="input-wrap">
+							<label for="adventure-date"></label>
+
+							<input type="text" name="adventure-date" id="adventure-date" placeholder="Дата народження дитини">
+						</div>
+						<div class="input-wrap">
+							<label for="adventure-message-0"></label>
+							<textarea name="adventure-message-0" id="adventure-message-0" placeholder="Місто постійного проживання дитини до 24.02.2022 р." class="text1"></textarea>
+						</div>
+						<div class="input-wrap">
+							<label for="adventure-message2"></label>
+							<textarea name="adventure-message2" id="adventure-message2" placeholder="Фізіологічні та психологічні особливості Вашої дитини, про які нам ліпше знати (закачування в транспорті, алергія (особливо на укуси комах), астма, енурез, проблеми з серцем, страх висоти, темряви тощо). Як дитина переживає війну, як змінилась її поведінка." class="text2"></textarea>
+						</div>
+						<div class="input-wrap">
+							<label for="adventure-message3"></label>
+							<textarea name="adventure-message3" id="adventure-message3" placeholder="Особливості харчування Вашої дитини (продукти, які не сприймає організм)" class="text3"></textarea>
+						</div>
+						<div class="input-wrap">
+							<label for="adventure-message4"></label>
+							<textarea name="adventure-message4" id="adventure-message4" placeholder="Хобі Вашої дитини" class="text4"></textarea>
+						</div>
+
+						<div class="input-wrap">
+							<label for="adventure-message5"></label>
+							<textarea name="adventure-message5" id="adventure-message5" placeholder="Чи має Ваша дитина досвід активного відпочинку на природі (ночівлі в наметі, походи вихідного дня, сплави, лижі тощо)? Будь ласка, опишіть, який саме." class="text5"></textarea>
+						</div>
+						<div class="input-wrap">
+							<label for="adventure-message6"></label>
+							<textarea name="adventure-message6" id="adventure-message6" placeholder="Питання, пропозиції, зауваження та все інше, що ви хочете нам сказати, можна залишити тут :)" class="text6"></textarea>
+						</div>
+						<div class="input-wrap">
+							<label for="adventure-message7"></label>
+							<textarea name="adventure-message7" id="adventure-message7" placeholder="Це пригодницький табір активного відпочинку, який передбачає фізичні навантаження. Ми не вимагаємо формальної довідки від лікаря, тому просимо вас повідомити про медичні застереження, які нам варто враховувати" class="text7"></textarea>
+						</div>
+
+						<div class="input-wrap-check input-wrap-check-big">
+							<input type="checkbox" id="check-adventure-1" name="check-adventure-1">
+							<label for="check-adventure-1">Я підтверджую, що стан здоров'я моєї дитини дозволяє їй брати участь в таборі активного відпочинку. Медичних застрежень немає.</label>
+						</div>
+
+						<div class="input-wrap-check input-wrap-check-big">
+							<input type="checkbox" id="check-adventure-2" name="check-adventure-2">
+							<label for="check-adventure-2">Я погоджуюсь, що права на всі фотографії та відеозаписи, зроблені під час таборів, належать організаторам. Організатори можуть використовувати та розповсюджувати ці фото- та відеоматеріали на власний розсуд.</label>
+						</div>
+
+						<div class="space"></div>
+						<h3 class="title">Інформація про табір:</h3>
+						<div class="select-block">
+							<label class="form-label" for="select-10"></label>
+							<select id="select-10" name="select-10">
+								<option value="0" disabled selected>Оберіть локацію табору</option>
+								<option value="1">Пасічна</option>
+								<option value="2">Вовчинці</option>
+							</select>
+						</div>
+						<div class="select-block">
+							<label class="form-label" for="select-11"></label>
+							<select id="select-11" name="select-11">
+								<option value="0" disabled selected>Чи вміє ваша дитина плавати?</option>
+								<option value="1">так, займається плаванням</option>
+								<option value="2">трохи плаває, на воді тримається</option>
+								<option value="3">не вміє</option>
+								<option value="4">інше</option>
+							</select>
+						</div>
+						<div class="select-block">
+							<label class="form-label" for="select-12"></label>
+							<select id="select-12" name="select-12">
+								<option value="0" disabled selected>Оберіть зміну табору</option>
+								<option value="1">Зміна 1</option>
+								<option value="2">Зміна 2</option>
+								<option value="3">Зміна 3</option>
+								<option value="4">Зміна 4</option>
+							</select>
+						</div>
+						<div class="input-wrap">
+							<label for="adventure-message8"></label>
+							<textarea name="adventure-message8" id="adventure-message8" placeholder="Місто, звідки виїжджатиме та куди повертатиметься дитина.
+" class="text8"></textarea>
+						</div>
+						<p class="info">* Організований виїзд у табір відбувається зі Львова та Івано-Франківська. Можливість організованого трансферу з інших міст обговорюємо після формування групи.</p>
+						<div class="space"></div>
+						<h3 class="title">Спосіб оплати:</h3>
+						<div class="input-wrap-check input-wrap-radio">
+							<input type="radio" id="radio-1-1" name="radio-1">
+							<label for="radio-1-1">Оплачую повну вартість</label>
+						</div>
+						<div class="input-wrap-check input-wrap-radio">
+							<input type="radio" id="radio-1-2" name="radio-1" checked>
+							<label for="radio-1-2">Потребую соціальної знижки у розмірі 50%</label>
+						</div>
+						<div class="input-wrap input-wrap-text">
+							<label for="adventure-message9"></label>
+							<textarea name="adventure-message9" id="adventure-message9" placeholder="Якщо ви потребуєте соціальної знижки, опишіть вашу ситуацію" class="text9"></textarea>
+						</div>
+						<div class="input-wrap-check input-wrap-radio">
+							<input type="radio" id="radio-1-3" name="radio-1">
+							<label for="radio-1-3">Інше</label>
+						</div>
+						<p class="info-light">Після підтвердження замовлення ми сконтактуємося з вами і надішлемо IBAN реквізити для оплати</p>
+
+						<div class="input-wrap-check">
+							<input type="checkbox" id="check-popup-10" name="check-popup-10">
+							<label for="check-popup-10">Натискаючи кнопку “Надіслати” я даю згоду на обробку моїх персональних даних</label>
+						</div>
+						<div class="input-submit input-submit-mt">
+							<button type="submit" class="btn-default btn-big">Підтвердити замовлення</button>
+						</div>
+					</div>
+					<div class="right">
+						<h3 class="title">Дані про пригоду:</h3>
+						<div class="total-item">
+							<div class="line">
+								<p class="name">GoЙra! RockCamp на скелях Довбуша</p>
+								<p class="price"><span>10000</span> грн</p>
+								<a href="#" class="del"><img src="img/icon-45.svg" alt=""></a>
+							</div>
+
+							<ul>
+								<li>Пт. 29 серп. - Пн. 05 вер. </li>
+								<li>8-15 років</li>
+							</ul>
+						</div>
+						<div class="total-line">
+							<p>Сума: <span>10000</span> грн</p>
+						</div>
+					</div>
+				</form>
+
+				<div class="send-block">
+					<div class="wrap">
+						<p class="h4">Дякуємо, заявку отримано</p>
+						<p>Ми сконтактуємо з вами найближчим часом.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+
+
+
+
+
+	<div id="festival" class="add-testimonials popup-default festival-popup" style="display:none;">
+		<a href="#" class="close-popup" data-fancybox-close> <img src="img/close.svg" alt=""></a>
+		<div class="popup-main">
+			<p class="h3">Реєстрація команди фестивалю GoЙra!</p>
+			<p>14 жовтня на Вовчинецьких пагорбах з 9:30 до 15:30 сімейні команди будуть вправлятися у спритності, влучності, творчій фантазії, вміння працювати разом та інших здібностях. По території Вовчинецьких пагорбів будуть розташовані станції з різноманітними завданнями, які треба знайти за допомогою мапи і пройти. Три години беззупинних веселощів і командної роботи - радо запрошуємо доєднатися, командо!</p>
+			<form action="#" class="form-default form-default-big">
+				<div class="input-wrap">
+					<label for="team-popup"></label>
+					<input type="text" name="team-popup" id="team-popup" placeholder="Назва команди*" required>
+				</div>
+				<div class="input-wrap">
+					<label for="name-popup"></label>
+					<input type="text" name="name-popup" id="name-popup" placeholder="Ім'я капітана*" required>
+				</div>
+				<div class="input-wrap input-wrap-tel ">
+					<label for="tel"></label>
+					<input type="text" name="tel-about" id="tel" placeholder="">
+				</div>
+
+
+				<div class="select-block">
+					<label class="form-label" for="select-1"></label>
+					<select id="select-1" name="select-1">
+						<option value="0" disabled selected>Оберіть вашу категорію*</option>
+						<option value="1">група 1 - 1 дорослий і 2 дітей, сумарний вік дітей <20 років</option>
+						<option value="2">група 2 - 1 дорослий і 2 дітей, сумарний вік дітей >20 років</option>
+						<option value="3">група 3 - 2 дорослих і 1 дитина 6-10 років</option>
+						<option value="4">група 4 - 2 дорослих і 1 дитина 11-16 років</option>
+						<option value="5">група 5 - 2 дорослих і 2 дітей</option>
+						<option value="6">група 6 - 1 дорослий, 3 дітей</option>
+						<option value="7">група 7 - 5 учасників, не більше 2 дорослих</option>
+					</select>
+				</div>
+
+				<div class="input-wrap">
+					<label for="message-popup"></label>
+					<textarea name="message-popup" id="message-popup" placeholder="Прізвище, ім’я та вік всіх учасників*"></textarea>
+				</div>
+
+				<div class="input-wrap-check input-wrap-check-black">
+					<input type="checkbox" id="check-popup-1" name="check-popup-1">
+					<label for="check-popup-1">Я погоджуюсь, що права на всі фотографії та відеозаписи, зроблені під час фестивалю, належать організаторам. Організатори можуть використовувати та розповсюджувати ці фото- та відеоматеріали на власний розсуд.</label>
+				</div>
+				<div class="input-wrap-check input-wrap-check-black">
+					<input type="checkbox" id="check-popup-2" name="check-popup-2">
+					<label for="check-popup-2">Я розумію, що це сімейний фестиваль активного відпочинку, який передбачає фізичні навантаження. Проходження етапів може призвезти, зокрема, до подряпин, брудного одягу, падінь тощо. Я згоден із тим, що повнолітні учасники команди несуть відповідальність за себе та дітей самостійно.</label>
+				</div>
+				<p class="info">Майже закінчили! Залишилося лише сплатити стартовий внесок з команди 600 грн на банку (<a href="https://send.monobank.ua/jar/2FzRJUzp7s">https://send.monobank.ua/jar/2FzRJUzp7s</a>) з коментарем “Назва команди, група, прізвище та ім’я учасників”. Після оплати надішліть, будь ласка, квитанцію сплати на вайбер чи телеграм +380967049198. Стартові внески підуть на участь у таборах дітей, чиї батьки не можуть оплатити повної вартості.</p>
+
+				<div class="input-wrap-check ">
+					<input type="checkbox" id="check-popup-3" name="check-popup-3">
+					<label for="check-popup-3">Натискаючи кнопку “Зареєструватися” я даю згоду на обробку моїх персональних даних</label>
+				</div>
+				<div class="input-submit">
+					<button type="submit" class="btn-default">Зареєструватися</button>
+				</div>
+			</form>
+			<div class="send-block">
+				<div class="wrap">
+					<p class="h4">Дякуємо</p>
+					<p>Ваш запит надіслано. Ми зв’яжемося з Вами найближчим часом.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+  <script src="js/jquery.min.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/intlTelInput.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/jquery.marquee.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/cuttr.min.js"></script>
+	<script src="js/air-datepicker.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

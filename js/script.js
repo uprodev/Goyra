@@ -33,6 +33,18 @@ jQuery(document).ready(function ($) {
     }, 5000);
   });
 
+  $(document).on('click', '.send-show-block .input-submit .btn-default', function (e){
+    e.preventDefault();
+    $(this).closest('.popup-main').find('.form-default').slideUp();
+    $(this).closest('.popup-main').find('.send-block .wrap').slideDown();
+    $(this).closest('.popup-main').find('.send-block').addClass('is-active');
+  });
+
+
+
+
+
+
 
 
 
@@ -355,6 +367,7 @@ jQuery(document).ready(function ($) {
   $(".fancybox").fancybox({
     touch:false,
     autoFocus:false,
+
   });
 
   //nice-select

@@ -470,6 +470,11 @@ $green: #2B3D24;
   .festival .btn-wrap a{
     min-width: inherit;
   }
+  .popup-full .form-default-big .input-wrap{
+    input, textarea{
+      font-size: 16px;
+    }
+  }
 }
 
 @media (max-width:991px) {
@@ -1479,6 +1484,44 @@ $green: #2B3D24;
   .rental .title{
     font-size: 30px;
   }
+  .popup-full .left{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .popup-full .right{
+    width: 100%;
+  }
+  .popup-full{
+    padding: 40px 20px;
+    .content-width{
+      max-width: 100%;
+    }
+  }
+  .merch .item-merch .img-wrap{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .merch .text-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .title{
+      order: 0;
+    }
+    p{
+      order: 10;
+    }
+    .price{
+      order: 1
+    }
+    .btn-wrap{
+      order: 2;
+      margin-bottom: 20px;
+    }
+    ul{
+      order: 11;
+    }
+  }
 }
 
 @media (max-width:767px) {
@@ -1658,6 +1701,15 @@ $green: #2B3D24;
   }
   .item-2n .content-item .item{
     width: 100%;
+  }
+  .events-block .bottom{
+    flex-direction: column;
+    a + a{
+      margin: 15px 0 0!important;
+    }
+    a{
+      padding: 0 10px;
+    }
   }
 }
 
@@ -3689,6 +3741,120 @@ $green: #2B3D24;
   .form-default .input-wrap-date img{
     left: calc(100% - 30px);
     top: 0;
+  }
+  .popup-full {
+    padding: 30px 0;
+    overflow: hidden;
+  }
+  .popup-full .title{
+    font-size: 22px;
+  }
+  .popup-full .space{
+    height: 25px;
+  }
+  .popup-full .form-default-big .input-wrap textarea {
+    height: 50px;
+  }
+  .popup-full .form-default-big .input-wrap .text2, .popup-full .form-default-big .input-wrap .text7 {
+    height: 220px;
+  }
+  .popup-full .form-default-big .input-wrap .text3, .popup-full .form-default-big .input-wrap .text6, .popup-full .form-default-big .input-wrap .text8, .popup-full .form-default-big .input-wrap .text9 {
+    height: 75px;
+  }
+  .popup-full .form-default-big .input-wrap .text5 {
+    height: 150px;
+  }
+  .popup-full .form-default .input-wrap-check-big label{
+    font-size: 16px;
+    padding-left: 30px;
+  }
+  .popup-full .form-default .input-wrap-check-big label:before{
+    width: 20px;
+    height: 20px;
+    margin-top: -13px;
+  }
+  .popup-full .form-default .input-wrap-check-big input:checked + label:after{
+    width: 16px;
+    margin-top: -16px;
+  }
+  .popup-full .form-default .input-wrap-radio label{
+    font-size: 16px;
+  }
+  .popup-full .total-item .name{
+    width: 100%;
+    padding: 0;
+    margin: 0 0 5px;
+  }
+  .popup-full .total-item .price{
+    width: 100%;
+  }
+  .festival-popup .info{
+    font-size: 16px;
+  }
+  .merch .item-merch:first-child{
+    margin-top: -20px;
+  }
+  .merch .item-merch .img-wrap figure {
+    width: calc(33.33% - 7px);
+    margin-right: 10px;
+    border-radius: 5px;
+    height: 22vw;
+  }
+  .merch .item-merch .img-wrap .big {
+    height: 72vw;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .merch .text-wrap .title{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    margin-bottom: 12px;
+  }
+  .merch .item-merch .img-wrap{
+    margin-bottom: 21px;
+  }
+  .merch .text-wrap p, .merch .text-wrap ul li{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .merch .text-wrap .price{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 138.3%;
+    margin-bottom: 10px;
+  }
+  .merch .text-wrap ul li{
+    margin-bottom: 13px;
+  }
+  .merch .text-wrap ul li:before{
+    top: 8px;
+  }
+  .merch .item-merch {
+    margin-bottom: 40px;
+  }
+  .merch-popup-old{
+    .form-default-big .input-wrap textarea{
+      height: 110px;
+    }
+  }
+  .popup-full .send-block .wrap{
+    padding: 40px 35px;
+  }
+  .popup-full .send-block .wrap .h4{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    margin-bottom: 20px;
+  }
+
+  .event .btn-wrap a + a {
+    margin: 15px 0 0!important;
   }
 }
 
